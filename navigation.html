@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                .main{
+                        background: blue;
+                        /* overflow: hidden; */
+                        display: grid;
+                        grid-template-columns: 1fr 2fr;
+                }
+                .menu{
+                        background: gray;
+                        /* overflow: hidden; */
+                }
+                .nav-menu{
+                        background: red;
+                        display: inline;
+                }
+                @media(max-width:600px){
+                        .nav-menu{
+                                display: block;
+                                transform: translate(0px,40px);
+                        }
+                }
+        </style>
+</head>
+<body>
+        <div class="main">
+                <div class="logo"><img src="PSD to html/images/Place Your Logo Here (Double Click to Edit).png" alt=""></div>
+                <ul class="menu">
+                        <li class="nav-menu"><a class="nav-link" href="">Home</a></li>
+                        <li class="nav-menu"><a class="nav-link" href="">Agency</a></li>
+                        <li class="nav-menu"><a class="nav-link" href="">Team</a></li>
+                        <li class="nav-menu"><a class="nav-link" href="">Services</a></li>
+                        <li class="nav-menu"><a class="nav-link" href="">Showcase</a></li>
+                        <li class="nav-menu"><a class="nav-link" href="">Blog</a></li>
+                        <li class="nav-menu"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+        </div>
+</body>
+</html>

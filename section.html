@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@200&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+                *{
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
+                }
+                .head{
+                        background: url(hero-1.jpg);
+                        position: relative;
+                }
+                .nav{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 20px 0px ;
+                }
+               .nav-menu{
+                        display: inline;
+               }
+               .nav-link{
+                display: inline-block;
+                padding: 20px;
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
+                font-family: Poppins, sans-serif;
+               }
+               .contact p:first-child{
+                color: #b7b7b7;
+                font-size: 14px;
+                font-family: Aldrich, sans-serif;
+               }
+               .contact p:last-child{
+                color: #DFA667;
+                font-size: 22px;
+                margin-top: 10px;
+                font-family: Aldrich, sans-serif;
+               }
+               .contant{
+                font-family: Aldrich, sans-serif;
+                font-size: 72px;
+                color: white;
+                margin: 250px auto 0 auto;
+                width: 60%;
+                text-align: center;
+               }
+               button{
+                background: none;
+                border: none;
+               }
+               .prev{
+                color: white;
+                font-size: 28px;
+                position: absolute;
+                top: 480px;
+                left: 145px;
+               }
+               .next{
+                color: white;
+                font-size: 28px;
+                position: absolute;
+                top: 480px;
+                right: 145px;
+               }
+               @media(max-width:1000px){
+                .navbar{
+                        display: none;
+                }
+                .contact{
+                        display: none;
+                }
+                .nav{
+                        justify-content: space-between;
+                        padding: 20px 10px;
+                }
+               }
+        </style>
+</head>
+<body>
+        <header class="head">
+                <nav class="nav">
+                        <div class="logo">
+                                <img src="logo.png.webp" alt="">
+                        </div>
+                        <div class="navigation">
+                                <ul class="navbar">
+                                        <li class="nav-menu"><a class="nav-link" href="">Home</a></li>
+                                        <li class="nav-menu"><a class="nav-link" href="">Projects</a></li>
+                                        <li class="nav-menu"><a class="nav-link" href="">About</a></li>
+                                        <li class="nav-menu"><a class="nav-link" href="">Pages</a></li>
+                                        <li class="nav-menu"><a class="nav-link" href="">Blog</a></li>
+                                        <li class="nav-menu"><a class="nav-link" href="">Contact</a></li>
+                                </ul>
+                        </div>
+                        <div class="contact">
+                                <p>Call us for any questions</p>
+                                <p>+01 123 456 789</p>
+                        </div>
+                </nav>
+                <p class="contant">QUALITY IS NOT ONLY OUR STANDARD.</p>
+                <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class="project">See Project</button>
+        </header>
+</body>
+</html>

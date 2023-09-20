@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Verification</title>
+    <style>
+        #verification-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #verification-image {
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="verification-container">
+        <img id="verification-image" src="../hero-1.jpg" alt="Verification Image">
+        <input type="text" id="verification-input" placeholder="Enter the text from the image">
+        <button onclick="verify()">Verify</button>
+        <p id="verification-message"></p>
+    </div>
+
+    <script>
+        const expectedText = "example"; // Replace with the expected text from the image
+
+        function verify() {
+            const input = document.getElementById("verification-input");
+            const message = document.getElementById("verification-message");
+
+            if (input.value.trim().toLowerCase() === expectedText) {
+                message.style.color = "green";
+                message.textContent = "Verification successful!";
+            } else {
+                message.style.color = "red";
+                message.textContent = "Verification failed. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>
